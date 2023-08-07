@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>java script 수업</title>
+    <script>
+
+        /* 변수 기초 */
+        var num = 10;
+        var str="안녕하세요";
+        console.log(num)
+        console.log(str)
+        console.log(num+str)  /* 연결 연산. 숫자의 경우 더하기도 한다.  */
+        let a=0;
+        const b = 1;  
+        //이것은 주석
+        /* 이것은 여러 줄 주석 */
+
+
+        /* 여러가지 변수들 */
+        let user; //현재 선언만 한 상태. undefined 상태
+        user = 'kim' //값을 줬음
+        let userTelnumber= 10;
+        let userAddress='서울';
+        let value1=123+'코드번호' //숫자와 연산은 + 연산자 필수.
+        let isOn=true
+        let isOff=false
+        let c = {
+            name:'lee',
+            age:30,
+            adress:'busan',
+            Tel:'01234567'
+        }
+
+        /* 로그 조회하기 */
+        console.log(typeof user)
+        console.log(typeof value1)  //숫자+문자 조합은, 문자로 형변환이 되버림
+        console.log(typeof isOn)  //불리언 값!
+        console.log(c.adress) //오브젝트로 만들고, 변수명 전체.특정 값 으로 호출
+        console.log(typeof c) //타입은 오브젝트라고 뜸
+
+
+        
+        //null 과 undefined 의 구분
+        let box;  //undefined
+        let box1= null; //null값. 빈 값을 넣는 것
+
+
+        /* 나머지 연산자 */
+        let num1 = 20;
+        let num2 = 3;
+        console.log(num1%num2)  //로그 찍어보면 20/3=>나머지 2가 출력된다.
+
+
+        /* 대입연산자 */
+        let value_1 = 2;
+        value_1*=10; // value_1에 *10을 한 값을 다시 할당한다.
+        console.log(value_1) //* 20으로 출력 
+
+        value_1 %=10 ; //앞서 20이 할당됐으니, 20/2=0
+        console.log(value_1) // 0으로 출력
+
+
+        /* 비교 연산자 */ 
+        //참,거짓으로 결과가 나옴
+        let first =10;
+        let second =10;
+        let third = first==second; // 10과 10이 맞는지 틀린지 그 값을 할당
+        console.log(third) //true 출력
+
+
+        let v1=10, v2=20, v3=30, v4=40, result;
+        result = v1<v2 && v2<v3 && v3<v4  //셋 다 참임
+        console.log(result) //true 출력
+        result2 = v1<v2 || v2<v3 || v3<v4  //셋 중에 하나만 맞아도 true
+        console.log(result2)
+        result3 = !(v1>v2)  //반대연산자
+        console.log(result3)
+
+        /* 삼항연산자 */
+        result4 = v1 > v2 ? '참a' : '거짓b'
+        console.log(result4)
+
+        /* 증감연산자 */
+        let num3 = 10;
+        num3++;
+        num3++;
+        num3--;
+        console.log(num3)
+
+
+        /* 조건문 */
+        if (0){
+            console.log('출력문입니다.')
+        }
+        userId = 'smj00';
+        if (userId=='smj01'){
+            console.log('출력문입니다.')
+        }else{
+            console.log('아이디가 틀렸습니다요..')
+        }
+
+        /* 프롬프트 창 (마치 코딩 때 input 창 같은거) */
+        userName = prompt('아이디를 입력해주세요!');
+        if (userName=='sesac'){
+            console.log(userName+'님 환영합니다~')
+        }else{
+            console.log(userName+'님 아이디가 틀렸습니다요..')
+        }
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

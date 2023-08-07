@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>길동이의 포트폴리오</title>
+    <script src="https://kit.fontawesome.com/f58fae1598.js" crossorigin="anonymous"></script>
+    <!-- css 파일 추가 -->
+    <link rel="stylesheet" href="portpolio_teacher.css">
+    <!-- 자바 스크립트 파일 추가 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <script src="index.js" defer></script><!-- defer: 문서 위쪽에 있지만, 맨 마지막에 읽겠다는 의미 -->
+    
+  </head>
+<body>
+<!-- Header --> 
+<header class="header">
+    <div class="header_logo">
+        <img src="top-logo.png" alt="logo" class="header_logo_img">
+        <h1 class="header_logo_title"><a href="#">JUNNI</a></h1>
+    </div>
+    <nav class="header_nav on">
+        <ul class="header_menu">
+            <li><a href="#home" class="header_menu_item active">Home</a></li>
+            <li><a href="#about" class="header_menu_item">About Me</a></li>
+            <li><a href="#skills" class="header_menu_item">Skills</a></li>
+            <li><a href="#work" class="header_menu_item">My Work</a></li>
+            <li><a href="#contact" class="header_menu_item">Contact</a></li>
+        </ul>
+    </nav>
+    <button class="header_toggle" aria-label="navigation menu toggle"><i class="fa-solid fa-bars"></i></button>
+</header>
+<!-- Main --> 
+<main>
+  <!-- Home -->
+  <section id="home">
+    <div class="home_container max-container"> 
+      <img src="profile.png" alt="홍길동프로필" class="home_avatar">
+      <div class="home_description">
+        <h2 class="home_title">안녕하세요 <br> <strong>UXUI Designer</strong> JUNNI 입니다.</h2>
+        <p class="home_profile_text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis adipisci soluta harum modi reprehenderit ab veritatis, vero porro laudantium assumenda tenetur obcaecati possimus fugiat quo quidem sequi veniam nulla dolorem explicabo excepturi nam et? Accusamus minus voluptatem molestias dignissimos aut porro temporibus? Sapiente, quidem a praesentium corporis nisi accusantium blanditiis.
+        </p>
+        <a href="#" class="home_contact">Contact ME</a>
+      </div>
+    </div>
+    <div class="custom-shape-divider-bottom-1691025773">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+    </div>
+  </section>
+  <!-- About -->
+  <section id="about" class="section max-container">
+    <h2 class="title">About me</h2>
+    <p class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur facilis dolores laboriosam ratione, aliquid ex, qui voluptates quidem atque illum recusandae libero nulla earum molestiae? Eveniet quas recusandae fuga aliquam explicabo, nemo enim, commodi odit quasi quod impedit molestias labore eius culpa eos facere minus, blanditiis quam adipisci facilis doloremque.
+    </p>
+    <ul class="majors">
+      <li class="major">
+        <i class="fa-solid fa-users major_icon"></i>
+        <p class="major_title">UX디자인</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.</p>
+      </li>
+      <li class="major">
+        <i class="fa-regular fa-object-group major_icon"></i>
+        <p class="major_title">UI디자인</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.</p>
+      </li>
+      <li class="major">
+        <i class="fa-solid fa-code major_icon"></i>
+        <p class="major_title">HTML,CSS 퍼블리싱</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quis.</p>
+      </li>
+    </ul>
+  </section>
+  <!-- skills -->
+  <section id="skills" class="section">
+   <div class="custom-shape-divider-top-1691027982">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+        </svg>
+   </div>
+
+    <div class="max-container">
+      <h2 class="title">My Skills</h2>
+      <p class="description">Skills & Attributes</p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae aspernatur tenetur consequuntur. Repellat ut, vel, voluptate minima et asperiores voluptatum, optio eos cumque assumenda illum dolor! A, voluptatum libero.
+      </p>
+      <div class="skills">
+        <section class="skills_point">
+            <h3 class="skill_title">Skills</h3>
+            <ul>
+              <li class="bar">
+                <div class="bar_data">
+                  <span>PHOTOSHOP</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar_bg">
+                  <div class="bar_value" style="width:90%"></div>
+                </div>
+              </li>
+              <li class="bar">
+                <div class="bar_data">
+                  <span>ILLUSTRATOR</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar_bg">
+                  <div class="bar_value" style="width:80%"></div>
+                </div>
+              </li>
+              <li class="bar">
+                <div class="bar_data">
+                  <span>FIGMA</span>
+                  <span>90%</span>
+                </div>
+                <div class="bar_bg">
+                  <div class="bar_value" style="width:90%"></div>
+                </div>
+              </li>
+              <li class="bar">
+                <div class="bar_data">
+                  <span>HTML</span>
+                  <span>80%</span>
+                </div>
+                <div class="bar_bg">
+                  <div class="bar_value" style="width:80%"></div>
+                </div>
+              </li>
+              <li class="bar">
+                <div class="bar_data">
+                  <span>CSS</span>
+                  <span>75%</span>
+                </div>
+                <div class="bar_bg">
+                  <div class="bar_value" style="width:75%"></div>
+                </div>
+              </li>
+            </ul>
+        </section>
+        <div class="skill_tools_box">
+          <section class="skill_tools">
+            <h3 class="skill_title">Tools</h3>
+            <ul>
+              <li>Photoshop</li>
+              <li>Illustrator</li>
+              <li>Fimga</li>
+              <li>Visual studio code</li>
+              <li>Visual studio code</li>
+              <li>Visual studio code</li>
+            </ul>
+          </section>
+          <section class="skill_etc">
+            <h3 class="skill_title">Etc</h3>
+            <ul>
+              <li>Drawing</li>
+              <li>Drawing</li>
+              <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- work -->
+  <section id="work" class="section">
+   <div class="custom-shape-divider-top-1691027408">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+   </div>    
+    <div class="max-container">
+      <h2 class="title">My work</h2>
+      <p class="description">Projects</p>
+      <ul class="categories">
+        <li><button class="category selected" data-filter="*">ALL<span class="category_count">3</span></button></li>
+        <li><button class="category" data-filter=".project1">프로젝트1<span class="category_count">1</span></button></li>
+        <li><button class="category" data-filter=".project2">프로젝트2<span class="category_count">1</span></button></li>
+        <li><button class="category" data-filter=".project3">프로젝트3<span class="category_count">1</span></button></li>
+      </ul>
+      <ul class="projects">
+        <li class="project project1">
+          <a href="#" target="_blank">
+            <img src="project-ex.png" alt="프로젝트이름" class="project_img">
+            <div class="project_data">
+              <h3>프로젝트명#1</h3>
+              <p>프로젝트 내용 간단한 설명</p>
+            </div>
+          </a>
+        </li>
+        <li class="project project2">
+          <a href="#" target="_blank">
+            <img src="project-ex.png" alt="프로젝트이름" class="project_img">
+            <div class="project_data">
+              <h3>프로젝트명#1</h3>
+              <p>프로젝트 내용 간단한 설명</p>
+            </div>
+          </a>
+        </li>
+        <li class="project project3">
+          <a href="#" target="_blank">
+            <img src="project-ex.png" alt="프로젝트이름" class="project_img">
+            <div class="project_data">
+              <h3>프로젝트명#1</h3>
+              <p>프로젝트 내용 간단한 설명</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" target="_blank">
+            <img src="project-ex.png" alt="프로젝트이름" class="project_img">
+            <div class="project_data">
+              <h3>프로젝트명#1</h3>
+              <p>프로젝트 내용 간단한 설명</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" target="_blank">
+            <img src="project-ex.png" alt="프로젝트이름" class="project_img">
+            <div class="project_data">
+              <h3>프로젝트명#1</h3>
+              <p>프로젝트 내용 간단한 설명</p>
+            </div>
+          </a>
+        </li>
+        <li class="project">
+          <a href="#" target="_blank">
+            <img src="project-ex.png" alt="프로젝트이름" class="project_img">
+            <div class="project_data">
+              <h3>프로젝트명#1</h3>
+              <p>프로젝트 내용 간단한 설명</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </section>
+  <aside>
+    <a href="#" class="arrow_up" title="위로가기 back to top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+  </aside>
+</main>
+<!-- footer -->
+<footer id="contact" class="section">
+ <div class="custom-shape-divider-top-1691026701">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M602.45,3.86h0S572.9,116.24,281.94,120H923C632,116.24,602.45,3.86,602.45,3.86Z" class="shape-fill"></path>
+        </svg>
+ </div>
+  <div class="max-container">
+    <h2 class="title">Let's talk</h2>
+    <p class="description">JUNNI@naver.com</p>
+    <a href="#" title="블로그" class="contact_link">
+      <i class="fa-brands fa-blogger"></i>
+    </a>
+    <address>&copy;JUNNI - All rights reserved</address>
+  </div>
+</footer>
+</body>
+</html>
